@@ -7,7 +7,7 @@ Pri vsaki karti bom zajel:
 * redkost
 * set v katerem se nahaja
 * poveprečno ceno in povprečno ceno foil verzije karte
-* zelo verjetno tudi zgodovino cen posameznih kart
+* zelo verjetno tudi zgodovino njene cene
 * še kaj, kar se bom še spomnil
 
 Delovne hipoteze:
