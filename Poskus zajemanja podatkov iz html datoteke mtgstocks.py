@@ -3,6 +3,9 @@ import requests
 import csv
 import json
 
+PRVI_SET = 810
+ZADNJI_SET = 812
+
 debug_mode = True
 
 vzorec_bloka = re.compile(
@@ -23,8 +26,6 @@ vzorec_karte = re.compile(
     flags=re.DOTALL
     )
 
-print(vzorec_karte)
-
 def izloci_podatke_o_kartah(blok):
     karta = vzorec_karte.search(blok).groupdict()
     karta['id_karte'] = int(karta['id_karte'])
@@ -36,38 +37,63 @@ def izloci_podatke_o_kartah(blok):
 
     return karta
 
-karte = []
-stetje = 0
+def pridobi_ustrezno_ime_lokalne_datoteke(st_strani):
+    return f"Podatki o kartah/Karte iz seta st. {st_strani}.html"
 
-with open("Innistrad_ Crimson Vow - MTGStocks.txt", "r") as f:
-    vsebina = f.read()
-    for blok in vzorec_bloka.finditer(vsebina):
-        stetje += 1
+
+
+
+# for st_strani in range(PRVI_SET, ZADNJI_SET):
+#     url = (
+#         f'https://www.mtgstocks.com/sets/{st_strani}' 
+#     )
+#     print(f"Zajemam {url}")
+#     response = requests.post(url, allow_redirects=False, timeout=5, headers={
+#         # "Accept-Language": "sl-si"
+#     })
+#     vsebina = response.text
+#     with open(pridobi_ustrezno_ime_lokalne_datoteke(st_strani), 'w') as dat:
+#         dat.write(vsebina)
+
+
+
+
+
+for st_seta in range(PRVI_SET, ZADNJI_SET):
+    with open(f"Podatki o kartah/Karte iz seta st. {st_seta}.html", "r") as f:
         
-        if debug_mode:
-            print(stetje)
-            print(blok.group(0))
-            print(vzorec_karte.search(blok.group(0)))
+        print(f"Berem set št. {st_seta}")
+        karte = []
+        stetje = 0
         
-        karte.append(izloci_podatke_o_kartah(blok.group(0)))
+        vsebina = f.read()
+        for blok in vzorec_bloka.finditer(vsebina):
+            stetje += 1
+            
+            if debug_mode:
+                print(stetje)
+                print(blok.group(0))
+                print(vzorec_karte.search(blok.group(0)))
+            
+            karte.append(izloci_podatke_o_kartah(blok.group(0)))
+            
+
+    with open("karte.json", "w") as dat:
+        json.dump(karte, dat, indent=4, ensure_ascii=False)
         
 
-with open("karte.json", "w") as dat:
-    json.dump(karte, dat, indent=4, ensure_ascii=False)
-    
-
-with open("karte.csv", "w") as dat:
-    writer = csv.DictWriter(dat, [
-        "id_karte",
-        "ime",
-        "set",
-        "redkost",
-        "povprecna_cena",
-        "povprecna_cena_foil",
-    ])
-    writer.writeheader()
-    writer.writerows(karte)
-    
+    with open("karte.csv", "w") as dat:
+        writer = csv.DictWriter(dat, [
+            "id_karte",
+            "ime",
+            "set",
+            "redkost",
+            "povprecna_cena",
+            "povprecna_cena_foil",
+        ])
+        writer.writeheader()
+        writer.writerows(karte)
+        
 
 
 
