@@ -5,12 +5,12 @@ Analiziral bom 50 najdražjih kart iz vsakega seta Magic: the Gathering. Sete z 
 Pri vsaki karti bom zajel:
 * ime
 * redkost
-* set v katerem se nahaja
+* set, v katerem se nahaja
 * poveprečno ceno in povprečno ceno foil verzije karte
 * zelo verjetno tudi zgodovino njene cene
 * še kaj, kar se bom še spomnil
 
 Delovne hipoteze:
 * Ali obstaja povezava med starostjo in ceno?
-* Ali karte postanejo cenejše po približno 2 letih (to je relevantno vprašanje, saj niso več standard-legalne)
+* Ali karte postanejo cenejše po približno 2 letih?
 * Koliko časa od izida karte v povprečju dosežejo najnižjo ceno?
