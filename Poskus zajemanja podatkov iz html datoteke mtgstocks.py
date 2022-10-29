@@ -16,10 +16,12 @@ driver = webdriver.Chrome("chromedriver.exe", options=chrome_options)
 
 # Ko potegnemo podatke s strani, poberemo podatke prvih 50 kart iz vsakega seta.
 # Začnemo šteti pri prvem, končamo pri zadnjem.
-PRVI_SET = 600
-ZADNJI_SET = 812
+PRVI_SET = 711
+ZADNJI_SET = 715
 
-debug_mode = True
+indeksi_setov_ki_obstajajo = []
+
+debug_mode = False
 
 vzorec_bloka = re.compile(
     r'<td><mtg-set-icon.*?'
@@ -66,29 +68,54 @@ for st_strani in range(PRVI_SET, ZADNJI_SET):
     url = (
         f'https://www.mtgstocks.com/sets/{st_strani}' 
     )
-    print(f"Zajemam {url}")
+    print(f"\n Zajemam {url}\n")
     driver.get(url)
+    time.sleep(3)
     
     # response = requests.post(url, allow_redirects=False, timeout=5, headers={
     #     # "Accept-Language": "sl-si"
     # })
     vsebina = driver.page_source
+    naslov_strani = driver.title
+    
+    print("Naslov strani:", naslov_strani)
+    
+    with open("pomozna_datoteka_za_pregledovanje_zadnje_vsebine.txt", "w") as dat:
+        dat.write(vsebina)    
     
     print("\n Čakam 4 sekunde bzzzz \n")
-    time.sleep(4)
     
-    if "Oops... Page not found!" in vsebina:
-        continue
-    with open(pridobi_ustrezno_ime_lokalne_datoteke(st_strani), 'w') as dat:
-        driver.find_element(by=By.XPATH, value='//*[@id="overview"]/mtg-sets-overview/data-table/div[2]/div/div/table/thead/tr[1]/th[3]').click()
-        dat.write(vsebina)
+
+    if naslov_strani in ["File not found - MTGStocks"]:
+        print(f'\n Stran št. {st_strani} ni dosegljiva.\n')
+    else:
+        print(f'\n Stran št. {st_strani} JE dosegljiva.\n')
+        indeksi_setov_ki_obstajajo.append(st_strani)
+        with open(pridobi_ustrezno_ime_lokalne_datoteke(st_strani), 'w') as dat:
+            
+            
+            if "Art Series:" in naslov_strani:
+                continue
+            # Če je set extrasov, ima drugačen vzorec
+            # elif ": Extras" in naslov_strani:
+            #     driver.find_element(by=By.XPATH, value='//*[@id="wrapper"]/div/div/div/div[1]/ng-component/div[2]/div/mtg-sets-overview/data-table/div[2]/div/div/table/thead/tr[1]/th[4]').click()
+            # else:
+            #     driver.find_element(by=By.XPATH, value='//*[@id="overview"]/mtg-sets-overview/data-table/div[2]/div/div/table/thead/tr[1]/th[3]').click()
+            # dat.write(vsebina)
+            elif ": Extras" in naslov_strani:
+                driver.find_element("xpath", "//span[text()='Market']")         
+            else:
+                driver.find_element("xpath", "//span[text()='Market']")
+            dat.write(vsebina)
     
 
 
 # Delujoče zajemanje podatkov setov s spletne strani, treba bo še zajeti podatke posameznih kart
+# Spodnjo kodo se da izboljšati, karte damo ven, nato pa samo enkrat odpremo json in csv datoteki
 
-for st_seta in range(PRVI_SET, ZADNJI_SET):
-    karte = []
+karte = []
+for st_seta in indeksi_setov_ki_obstajajo:
+    
     stetje = 0
     with open(f"Podatki o kartah/Karte iz seta st. {st_seta}.html", "r") as f:
         print(f"Berem podatke kart iz seta #{st_seta}")
@@ -104,30 +131,20 @@ for st_seta in range(PRVI_SET, ZADNJI_SET):
                 print(blok.group(0))
             
             karte.append(izloci_podatke_o_kartah(blok.group(0)))
-            
-            
 
-    with open("karte.json", "a") as dat:
-        json.dump(karte, dat, indent=4, ensure_ascii=False)
-        
-
-    with open("karte.csv", "a") as dat:
-        writer = csv.DictWriter(dat, [
-            "id_karte",
-            "ime",
-            "set",
-            "redkost",
-            "povprecna_cena",
-            "povprecna_cena_foil",
-        ])
-        writer.writeheader()
-        writer.writerows(karte)
-        
-
-
-
+with open("karte.json", "a") as dat:
+    json.dump(karte, dat, indent=4, ensure_ascii=False)
     
 
-
-
- 
+with open("karte.csv", "a") as dat:
+    writer = csv.DictWriter(dat, [
+        "id_karte",
+        "ime",
+        "set",
+        "redkost",
+        "povprecna_cena",
+        "povprecna_cena_foil",
+    ])
+    writer.writeheader()
+    writer.writerows(karte)
+        
