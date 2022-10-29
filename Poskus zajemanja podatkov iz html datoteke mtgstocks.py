@@ -6,15 +6,16 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 import time
-
-
-
+    
 # Tole dvoje je treba, da se Chrome sproti ne odpira
 chrome_options = Options()
 chrome_options.add_argument("--headless")
 
 driver = webdriver.Chrome("chromedriver.exe", options=chrome_options)
 
+
+# Ko potegnemo podatke s strani, poberemo podatke prvih 50 kart iz vsakega seta.
+# Začnemo šteti pri prvem, končamo pri zadnjem.
 PRVI_SET = 810
 ZADNJI_SET = 812
 
@@ -65,8 +66,6 @@ for st_strani in range(PRVI_SET, ZADNJI_SET):
     print(f"Zajemam {url}")
     driver.get(url)
     driver.find_element(by=By.XPATH, value='//*[@id="overview"]/mtg-sets-overview/data-table/div[2]/div/div/table/thead/tr[1]/th[3]').click()
-    #driver.find_element("xpath", "//input[@value='Market']").click()
-    
     # response = requests.post(url, allow_redirects=False, timeout=5, headers={
     #     # "Accept-Language": "sl-si"
     # })
@@ -75,7 +74,7 @@ for st_strani in range(PRVI_SET, ZADNJI_SET):
         dat.write(vsebina)
 
 
-# Delujoče zajemanje
+# Delujoče zajemanje podatkov setov s spletne strani, treba bo še zajeti podatke posameznih kart
 
 # for st_seta in range(PRVI_SET, ZADNJI_SET):
 #     with open(f"Podatki o kartah/Karte iz seta st. {st_seta}.html", "r") as f:
