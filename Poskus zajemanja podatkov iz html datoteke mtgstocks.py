@@ -16,10 +16,10 @@ driver = webdriver.Chrome("chromedriver.exe", options=chrome_options)
 
 # Ko potegnemo podatke s strani, poberemo podatke prvih 50 kart iz vsakega seta.
 # Začnemo šteti pri prvem, končamo pri zadnjem.
-PRVI_SET = 810
+PRVI_SET = 600
 ZADNJI_SET = 812
 
-debug_mode = False
+debug_mode = True
 
 vzorec_bloka = re.compile(
     r'<td><mtg-set-icon.*?'
@@ -54,8 +54,11 @@ def pridobi_ustrezno_ime_lokalne_datoteke(st_strani):
     return f"Podatki o kartah/Karte iz seta st. {st_strani}.html"
 
 
-# Najprej poradiramo csv datoteko
+# Najprej poradiramo csv in json datoteki
 with open("karte.csv", "w") as dat:
+    pass
+
+with open("karte.json", "w") as dat:
     pass
 
 
@@ -65,37 +68,46 @@ for st_strani in range(PRVI_SET, ZADNJI_SET):
     )
     print(f"Zajemam {url}")
     driver.get(url)
-    driver.find_element(by=By.XPATH, value='//*[@id="overview"]/mtg-sets-overview/data-table/div[2]/div/div/table/thead/tr[1]/th[3]').click()
+    
     # response = requests.post(url, allow_redirects=False, timeout=5, headers={
     #     # "Accept-Language": "sl-si"
     # })
     vsebina = driver.page_source
+    
+    print("\n Čakam 4 sekunde bzzzz \n")
+    time.sleep(4)
+    
+    if "Oops... Page not found!" in vsebina:
+        continue
     with open(pridobi_ustrezno_ime_lokalne_datoteke(st_strani), 'w') as dat:
+        driver.find_element(by=By.XPATH, value='//*[@id="overview"]/mtg-sets-overview/data-table/div[2]/div/div/table/thead/tr[1]/th[3]').click()
         dat.write(vsebina)
+    
 
 
 # Delujoče zajemanje podatkov setov s spletne strani, treba bo še zajeti podatke posameznih kart
 
-# for st_seta in range(PRVI_SET, ZADNJI_SET):
-#     with open(f"Podatki o kartah/Karte iz seta st. {st_seta}.html", "r") as f:
+for st_seta in range(PRVI_SET, ZADNJI_SET):
+    karte = []
+    stetje = 0
+    with open(f"Podatki o kartah/Karte iz seta st. {st_seta}.html", "r") as f:
+        print(f"Berem podatke kart iz seta #{st_seta}")
         
-#         print(f"Berem podatke kar iz seta #{st_seta}")
-#         karte = []
-#         stetje = 0
         
-#         vsebina = f.read()
-#         for blok in vzorec_bloka.finditer(vsebina):
-#             stetje += 1
+        vsebina = f.read()
+        
+        for blok in vzorec_bloka.finditer(vsebina):
+            stetje += 1
             
-#             if debug_mode:
-#                 print(stetje)
-#                 print(blok.group(0))
+            if debug_mode:
+                print(stetje)
+                print(blok.group(0))
             
-#             karte.append(izloci_podatke_o_kartah(blok.group(0)))
-#             time.sleep(5)
+            karte.append(izloci_podatke_o_kartah(blok.group(0)))
+            
             
 
-    with open("karte.json", "w") as dat:
+    with open("karte.json", "a") as dat:
         json.dump(karte, dat, indent=4, ensure_ascii=False)
         
 
