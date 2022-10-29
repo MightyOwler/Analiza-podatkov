@@ -19,7 +19,7 @@ driver = webdriver.Chrome("chromedriver.exe", options=chrome_options)
 PRVI_SET = 45
 ZADNJI_SET = 46
 
-indeksi_setov_ki_obstajajo = [45, 46]
+indeksi_setov_ki_obstajajo = range(1,10)
 
 debug_mode_branje_iz_lokalnih_datotek = True
 
@@ -34,7 +34,7 @@ vzorec_karte = re.compile(
     r'<a href="/prints/(?P<id_karte>\d*).*?">'
     r'(?P<ime>.*?)'
     r'</a>.*?</td>.*?<td> (?P<redkost>.*?) </td>'
-    r'.*?<td class="text-end"> \$(?P<povprecna_cena>.*?) </td>(<\!---->)+(<td class="text-end">.*?</td>.*?<td class="text-end"> \$(?P<povprecna_cena_foil>.*?) </td>.*?<td class="text-end">.*?</td>)?',  
+    r'.*?<td class="text-end"> (?P<povprecna_cena>.*?) </td>(<\!---->)+(<td class="text-end">.*?</td>.*?<td class="text-end"> (?P<povprecna_cena_foil>.*?) </td>.*?<td class="text-end">.*?</td>)?',  
     flags=re.DOTALL
     )
 
