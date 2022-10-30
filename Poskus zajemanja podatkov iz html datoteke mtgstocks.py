@@ -35,7 +35,7 @@ vzorec_karte = re.compile(
     r'(?P<ime>.*?)'
     r'</a>.*?</td>.*?<td> (?P<redkost>.*?) </td>'
     r'.*?<td class="text-end">'
-    r'(?P<povprecna_cena>.*?) </td>(<\!---->)+(<td class="text-end">.*?</td>.*?<td class="text-end"> (?P<povprecna_cena_foil>.*?) </td>.*?<td class="text-end">.*?</td>)?',  
+    r' (?P<povprecna_cena>.*?) </td>(<\!---->)+(<td class="text-end">.*?</td>.*?<td class="text-end"> (?P<povprecna_cena_foil>.*?) </td>.*?<td class="text-end">.*?</td>)?',  
     flags=re.DOTALL
     )
 
