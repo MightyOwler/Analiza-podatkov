@@ -8,6 +8,47 @@ problematicni_seti = ["PFNM", "PMTG1", "DD3", "PARL2"]
 ###########################################################################################
 
 
+def izlusci_podatke_o_kartah_iz_bloka(blok):
+    karta = vzorec_karte.search(blok).groupdict()
+    karta['id_karte'] = int(karta['id_karte'])
+    karta['ime'] = karta['ime'].strip()
+    karta['set'] = karta['set'].upper()
+    karta['redkost'] = karta["redkost"].strip()
+    karta['povprecna_cena'] = karta["povprecna_cena"]
+    karta['povprecna_cena_foil'] = karta["povprecna_cena_foil"]
+
+    return karta
+
+
+def pridobi_ustrezno_ime_lokalne_datoteke(st_strani):
+    return f"Podatki o kartah/Podatki iz setov/Karte iz seta st. {st_strani}.html"
+
+
+def izlusci_podatke_o_setih(vsebina, vzorec, posamezen_set, podatki_o_kartah):
+    if posamezen_set in problematicni_seti:
+        # Spodnji seti so problematični, saj so na spletni strani MTGStocks shranjeni pod istim imenom, kljub temu,
+        # da v resnici gre za več setov
+        # Napake sem poravil ročno, saj so ti specifični podatki pomembni
+        
+        st_kart_v_problematicnem_setu = int(podatki_o_kartah["set"].value_counts()[posamezen_set])
+        if posamezen_set == "DD3":
+            return {"set": posamezen_set, "polno_ime": "Duel Decks: Anthology", "st_kart": st_kart_v_problematicnem_setu, "datum_izida": "2014-12-05"}
+        elif posamezen_set == "PFNM":
+            return {"set": posamezen_set, "polno_ime": "Friday Night Magic: Promos", "st_kart": st_kart_v_problematicnem_setu, "datum_izida": None}
+        elif posamezen_set == "PMTG1":
+            return {"set": posamezen_set, "polno_ime": "Promos", "st_kart": st_kart_v_problematicnem_setu, "datum_izida": None}
+        elif posamezen_set == "PARL2":
+            return {"set": posamezen_set, "polno_ime": "Arena Promos", "st_kart": st_kart_v_problematicnem_setu, "datum_izida": None}
+    
+    konkreten_set = {"set": posamezen_set}
+    konkreten_set.update(vzorec.search(vsebina).groupdict())
+    
+    konkreten_set['polno_ime'] = konkreten_set['polno_ime'].strip()
+    konkreten_set['st_kart'] = int(konkreten_set['st_kart'])
+    konkreten_set['datum_izida'] = konkreten_set["datum_izida"] # tukaj bi se morda dalo še kaj dodati
+    return konkreten_set
+
+
 def izlusci_podatke_manacosta_in_barve(niz):
     seznam_simbolov = re.findall(vzorec_za_manacost, niz)
     cmc = 0
@@ -38,46 +79,6 @@ def izlusci_podatke_manacosta_in_barve(niz):
     return {"cmc": cmc, "manacost": manacost, "barva": barva}
 
 
-def izloci_podatke_o_kartah(blok):
-    karta = vzorec_karte.search(blok).groupdict()
-    karta['id_karte'] = int(karta['id_karte'])
-    karta['ime'] = karta['ime'].strip()
-    karta['set'] = karta['set'].upper()
-    karta['redkost'] = karta["redkost"].strip()
-    karta['povprecna_cena'] = karta["povprecna_cena"]
-    karta['povprecna_cena_foil'] = karta["povprecna_cena_foil"]
-
-    return karta
-
-
-def pridobi_ustrezno_ime_lokalne_datoteke(st_strani):
-    return f"Podatki o kartah/Podatki iz setov/Karte iz seta st. {st_strani}.html"
-
-
-def izloci_podatke_o_setih(vsebina, vzorec, posamezen_set, podatki_o_kartah):
-    if posamezen_set in problematicni_seti:
-        # Ker je tako malo problematičnih setov, jih lahko popravimo na roko
-        # Tega nisem mogels storiti drugače, saj so bile napake na strežniku, podatki pa zelo pomembni
-        
-        st_kart_v_problematicnem_setu = int(podatki_o_kartah["set"].value_counts()[posamezen_set])
-        if posamezen_set == "DD3":
-            return {"set": posamezen_set, "polno_ime": "Duel Decks: Anthology", "st_kart": st_kart_v_problematicnem_setu, "datum_izida": "2014-12-05"}
-        elif posamezen_set == "PFNM":
-            return {"set": posamezen_set, "polno_ime": "Friday Night Magic: Promos", "st_kart": st_kart_v_problematicnem_setu, "datum_izida": None}
-        elif posamezen_set == "PMTG1":
-            return {"set": posamezen_set, "polno_ime": "Promos", "st_kart": st_kart_v_problematicnem_setu, "datum_izida": None}
-        elif posamezen_set == "PARL2":
-            return {"set": posamezen_set, "polno_ime": "Arena Promos", "st_kart": st_kart_v_problematicnem_setu, "datum_izida": None}
-    
-    konkreten_set = {"set": posamezen_set}
-    konkreten_set.update(vzorec.search(vsebina).groupdict())
-    
-    konkreten_set['polno_ime'] = konkreten_set['polno_ime'].strip()
-    konkreten_set['st_kart'] = int(konkreten_set['st_kart'])
-    konkreten_set['datum_izida'] = konkreten_set["datum_izida"] # tukaj bi se morda dalo še kaj dodati
-    return konkreten_set
-
-
 def doloci_super_sub_in_cardtype(niz):
     niz = niz.removesuffix(", ")
     supertype, subtype, cardtype = [], [], []
@@ -102,6 +103,7 @@ def pretvori_findall_seznam_v_singleton(seznam):
         return seznam[0]
     else:
         return None
+    
 
 def izlusci_podatke_o_specificni_karti_iz_njene_datoteke(niz):
     povprecje_eu = re.findall(vzorec_povprecja_eu, niz)
