@@ -1,8 +1,8 @@
 # Analiza podatkov - MTG trg
 
-Analiziral bom karte iz vsakega pomembnejšega Magic: the Gathering. Podatke bom vzel s strani [MTGStocks.com](https://www.mtgstocks.com/sets), saj so lahko dostopni in bolj popolni kot na evropski spletni strani. Na njej je mogoče razbrati tudi povprečno evropsko ceno kart.
+Analiziral bom karte iz vsakega pomembnejšega seta *Magic: the Gathering*. Podatke bom vzel s strani [MTGStocks.com](https://www.mtgstocks.com/sets), saj so lahko dostopni in bolj popolni kot na evropski spletni strani. Na njej je mogoče razbrati tudi povprečno evropsko ceno kart.
 
-Pri vsaki karti bom zajel:
+**Pri vsaki karti bom zajel**:
 * njen indeks na MTGStocks.com
 * ime
 * redkost
@@ -15,13 +15,13 @@ Pri vsaki karti bom zajel:
 * supertype, cardtype in subtype
 * oracle text
 
-Pri vsakem setu bom zajel:
+**Pri vsakem setu bom zajel**:
 * kodo seta
 * polno ime
 * št. kart
 * datum izida
 
-Delovne hipoteze:
+**Delovne hipoteze**:
 * Ali obstaja povezava med starostjo in ceno kart?
 * Kateri tipi kart so najbolj vredni?
 * Kateri seti so najbolj vredni?
