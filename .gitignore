@@ -128,7 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-*.html
 Analiza podatkov.code-workspace
 testni_zajcek.txt
 karte.csv
