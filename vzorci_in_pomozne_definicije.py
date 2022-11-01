@@ -70,7 +70,7 @@ def izlusci_podatke_manacosta_in_barve(niz):
     
     # To je majhen popravek za karte s hybrid manacostom
     # Potreben je, ker je to bug na strani MTGSrocks (narobno zapisuje hybrid cost)
-    cmc -= barva.count("(") + barva.count("{")
+    cmc -= manacost.count("(") + manacost.count("{")
     
     if barva == "":
         barva += "c"
@@ -80,21 +80,35 @@ def izlusci_podatke_manacosta_in_barve(niz):
 
 
 def doloci_super_sub_in_cardtype(niz):
-    niz = niz.removesuffix(", ")
+    niz = niz.removesuffix(", ").strip()
     supertype, subtype, cardtype = [], [], []
-    for suprtype in seznam_supertypov:
-        if suprtype in niz:
-            supertype.append(suprtype)
-            niz = niz.replace(f"{suprtype} ","")
-    if "-" in niz or "—" in niz:
-        niz = niz.replace("—","-")
-        str_cardtype, str_subtype = niz.split(" - ")
-        cardtype = [typ.strip() for typ in str_cardtype.split(" ") if typ.strip() != ""]
-        subtype = [typ.strip() for typ in str_subtype.split(" ") if typ.strip() != ""]
-    elif " " in niz:
-        cardtype = [typ.strip() for typ in niz.split(" ") if typ.strip() != ""]
-    else:
-        cardtype.append(niz.strip())
+    
+    # najprej polovimo nekaj starih karth (niso navedene pravilno na spletni strani)
+    if "Enchant " in niz:
+        cardtype.append("Enchantment")
+        subtype.append("Aura")
+        return supertype, cardtype, subtype
+    if "Summon " in niz:
+        niz = niz.replace("Summon ", "Creature - ")
+        if "Legend" in niz:
+            supertype.append("Legendary")
+            niz = niz.replace("Legend", "")
+    
+    # Če smo pri tem izpraznili niz, samo returnamo
+    if len(niz) > 0:
+        for suprtype in seznam_supertypov:
+            if suprtype in niz:
+                supertype.append(suprtype)
+                niz = niz.replace(f"{suprtype} ","")
+        if "-" in niz or "—" in niz:
+            niz = niz.replace("—","-")
+            str_cardtype, str_subtype = niz.split(" - ")
+            cardtype = [typ.strip() for typ in str_cardtype.split(" ") if typ.strip() != ""]
+            subtype = [typ.strip() for typ in str_subtype.split(" ") if typ.strip() != ""]
+        elif " " in niz:
+            cardtype = [typ.strip() for typ in niz.split(" ") if typ.strip() != ""]
+        else:
+            cardtype.append(niz.strip())
         
     return supertype, cardtype, subtype
 
