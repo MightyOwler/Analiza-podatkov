@@ -1,0 +1,227 @@
+set,polno_ime,st_kart,datum_izida
+RTR,Return to Ravnica,274,2012-10-05
+ZEN,Zendikar,269,2009-10-02
+BRB,Battle Royale Box Set,136,1999-11-12
+SNC,Streets of New Capenna,510,2022-04-29
+NCC,New Capenna Commander,447,2022-04-29
+BTD,Beatdown Box Set,90,2000-10-01
+CHR,Chronicles,125,1995-07-01
+CMD,Commander 2011,318,2011-06-17
+HOP,Planechase,169,2009-09-04
+CSP,Coldsnap,155,2006-07-21
+PC2,Planechase 2012,156,2012-06-01
+UGL,Unglued,88,1998-08-11
+UNH,Unhinged,168,2004-11-19
+2X2,Double Masters 2022,579,2022-07-08
+PVAN,Vanguard Series,32,1997-05-01
+ARB,Alara Reborn,145,2009-04-30
+GTC,Gatecrash,249,2013-02-01
+CLB,Commander Legends: Battle for Baldur's Gate,936,2022-06-10
+DGM,Dragon's Maze,156,2013-05-03
+DDK,Duel Decks: Sorin vs. Tibalt,80,2013-03-15
+PFNM,Friday Night Magic: Promos,230,
+DMU,Dominaria United,434,2022-09-09
+DMC,Dominaria United Commander,240,2022-09-09
+GN3,Game Night: Free-for-All,135,2022-10-14
+40K,"Warhammer 40,000 Commander",618,2022-10-07
+PHED,"Heads I Win, Tails You Lose",82,2022-04-22
+PMTG1,Promos,2229,
+BRO,The Brothers' War,97,2022-11-18
+CON,Conflux,145,2009-02-06
+ALA,Shards of Alara,250,2008-10-03
+EVE,Eventide,180,2008-07-25
+SHM,Shadowmoor,302,2008-05-02
+MOR,Morningtide,150,2008-02-01
+LRW,Lorwyn,301,2007-10-12
+FUT,Future Sight,180,2007-05-04
+PLC,Planar Chaos,165,2007-02-02
+AVR,Avacyn Restored,244,2012-05-04
+TSP,Time Spiral,301,2006-10-06
+MMA,Modern Masters,229,2013-06-07
+M14,Magic 2014,249,2013-07-19
+THS,Theros,249,2013-09-27
+DDL,Duel Decks: Heroes vs. Monsters,81,2013-09-06
+C13,Commander 2013,356,2013-11-01
+BNG,Born of the Gods,165,2014-02-07
+DIS,Dissension,180,2006-05-05
+DDM,Duel Decks: Jace vs. Vraska,88,2014-03-14
+JOU,Journey into Nyx,165,2014-05-02
+CNS,Conspiracy,210,2014-06-06
+MD1,Modern Event Deck 2014,26,2014-05-30
+M15,Magic 2015,284,2014-07-18
+DDN,Duel Decks: Speed vs. Cunning,82,2014-09-05
+KTK,Khans of Tarkir,269,2014-09-26
+GPT,Guildpact,166,2006-02-03
+C14,Commander 2014,337,2014-11-07
+DD3,Duel Decks: Anthology,212,2014-12-05
+FRF,Fate Reforged,191,2015-01-23
+DDO,Duel Decks: Elspeth vs. Kiora,67,2015-02-27
+DTK,Dragons of Tarkir,264,2015-03-27
+MM2,Modern Masters 2015,249,2015-05-22
+ORI,Magic Origins,288,2015-07-17
+RAV,Ravnica: City of Guilds,306,2005-10-07
+DDP,Duel Decks: Zendikar vs. Eldrazi,80,2015-08-28
+BFZ,Battle for Zendikar,299,2015-10-02
+C15,Commander 2015,342,2015-11-13
+OGW,Oath of the Gatewatch,187,2016-01-22
+DDQ,Duel Decks: Blessed vs. Cursed,80,2016-02-26
+DKM,Deckmasters,58,2001-12-01
+SOI,Shadows over Innistrad,302,2016-04-08
+SOK,Saviors of Kamigawa,165,2005-06-03
+EMA,Eternal Masters,249,2016-06-10
+EMN,Eldritch Moon,208,2016-07-22
+CN2,Conspiracy: Take the Crown,222,2016-08-26
+KLD,Kaladesh,278,2016-09-30
+C16,Commander 2016,351,2016-11-11
+AER,Aether Revolt,197,2017-01-20
+PCA,Planechase Anthology,156,2016-11-25
+DDR,Duel Decks: Nissa vs. Ob Nixilis,76,2016-09-02
+BOK,Betrayers of Kamigawa,165,2005-02-04
+CED,Collectors’ Edition,302,1993-12-10
+MM3,Modern Masters 2017,249,2017-03-17
+DDS,Duel Decks: Mind vs. Might,65,2017-03-31
+AKH,Amonkhet,287,2017-04-28
+PARL2,Arena Promos,86,
+E01,Archenemy: Nicol Bolas,106,2017-06-16
+HOU,Hour of Devastation,209,2017-07-14
+CHK,Champions of Kamigawa,307,2004-10-01
+XLN,Ixalan,289,2017-09-29
+RIX,Rivals of Ixalan,205,2018-01-19
+UST,Unstable,268,2017-12-08
+E02,Explorers of Ixalan,48,2017-11-24
+C17,Commander 2017,309,2017-08-25
+DDT,Duel Decks: Merfolk vs. Goblins,63,2017-10-24
+IMA,Iconic Masters,249,2017-11-17
+CMA,Commander Anthology,320,2017-06-09
+5DN,Fifth Dawn,165,2004-06-04
+DOM,Dominaria,280,2018-04-27
+DDU,Duel Decks: Elves vs. Inventors,76,2018-04-06
+A25,Masters 25,249,2018-03-16
+W16,Welcome Deck 2016,16,2016-04-08
+W17,Welcome Deck 2017,30,2017-04-15
+M19,Core Set 2019,314,2018-07-13
+BBD,Battlebond,256,2018-06-08
+CM2,Commander Anthology Volume II,312,2018-06-08
+DKA,Dark Ascension,158,2012-02-03
+DST,Darksteel,165,2004-02-06
+C18,Commander 2018,307,2018-08-09
+SS1,Signature Spellbook: Jace,8,2018-06-15
+GS1,Global Series Jiang Yanggu &amp; Mu Yanling,41,2018-06-22
+FBB,Foreign Black Border,307,1994-04-01
+ATH,Anthologies,85,1998-11-01
+GRN,Guilds of Ravnica,273,2018-10-05
+MRD,Mirrodin,306,2003-10-02
+RNA,Ravnica Allegiance,273,2019-01-25
+MED,Mythic Edition,24,2018-10-05
+GK1,GRN Guild Kit,127,2018-11-02
+UMA,Ultimate Masters,254,2018-12-07
+SCG,Scourge,143,2003-05-26
+GNT,Game Night,68,2018-11-16
+WAR,War of the Spark,312,2019-05-03
+MH1,Modern Horizons,255,2019-06-14
+SS2,Signature Spellbook: Gideon,8,2019-06-28
+LGN,Legions,145,2003-02-03
+M20,Core Set 2020,345,2019-07-12
+ELD,Throne of Eldraine,399,2019-10-04
+C19,Commander 2019,302,2019-08-23
+CEI,Intl. Collectors’ Edition,302,1993-12-10
+THB,Theros Beyond Death,358,2020-01-24
+M21,Core Set 2021,397,2020-07-03
+IKO,Ikoria: Lair of Behemoths,390,2020-04-24
+ZNR,Zendikar Rising,408,2020-09-25
+ONS,Onslaught,351,2002-10-07
+GN2,Game Night 2019,64,2019-11-15
+MB1,Mystery Booster,1697,2019-11-07
+FMB1,Mystery Booster Retail Edition Foils,121,2020-03-08
+PMEI,Media Inserts,45,1995-01-01
+UND,Unsanctioned,96,2020-02-29
+ZNC,Zendikar Rising Commander,142,2020-09-25
+CMR,Commander Legends,718,2020-11-20
+CC1,Commander Collection: Green,8,2020-12-04
+JUD,Judgment,143,2002-05-27
+C20,Commander 2020,322,2020-04-17
+SS3,Signature Spellbook: Chandra,8,2020-06-26
+2XM,Double Masters,384,2020-08-07
+JMP,Jumpstart,497,2020-07-17
+TSR,Time Spiral Remastered,411,2021-03-19
+TOR,Torment,143,2002-02-04
+KHM,Kaldheim,424,2021-02-05
+STX,Strixhaven: School of Mages,393,2021-04-23
+AFR,Adventures in the Forgotten Realms,422,2021-07-23
+MH2,Modern Horizons 2,494,2021-06-18
+ZNE,Zendikar Rising Expeditions,30,2020-09-25
+VOW,Innistrad: Crimson Vow,417,2021-11-19
+MID,Innistrad: Midnight Hunt,396,2021-09-24
+PSUM,Summer of Magic,2,2007-07-21
+ODY,Odyssey,352,2001-10-01
+APC,Apocalypse,143,2001-06-04
+KHC,Kaldheim Commander,119,2021-02-05
+PLS,Planeshift,146,2001-02-05
+ISD,Innistrad,264,2011-09-30
+INV,Invasion,352,2000-10-02
+PCY,Prophecy,144,2000-06-05
+NEM,Nemesis,143,2000-02-14
+MMQ,Mercadian Masques,350,1999-10-04
+UDS,Urza's Destiny,143,1999-06-07
+STA,Strixhaven Mystical Archive,126,2021-04-23
+ULG,Urza's Legacy,143,1999-02-15
+USG,Urza's Saga,356,1998-10-12
+EXO,Exodus,143,1998-06-15
+STH,Stronghold,143,1998-03-02
+TMP,Tempest,350,1997-10-14
+NPH,New Phyrexia,175,2011-05-13
+WTH,Weatherlight,167,1997-06-09
+VIS,Visions,167,1997-02-03
+C21,Commander 2021,409,2021-04-23
+MIR,Mirage,351,1996-10-08
+ALL,Alliances,199,1996-06-10
+HML,Homelands,140,1995-10-01
+ICE,Ice Age,383,1995-06-03
+FEM,Fallen Empires,187,1994-11-01
+DRK,The Dark,122,1994-08-01
+LEG,Legends,310,1994-06-01
+ATQ,Antiquities,102,1994-03-04
+MBS,Mirrodin Besieged,155,2011-02-04
+ARN,Arabian Nights,92,1993-12-17
+M13,Magic 2013,249,2012-07-13
+M12,Magic 2012,249,2011-07-15
+M11,Magic 2011,249,2010-07-16
+M10,Magic 2010,249,2009-07-17
+10E,Tenth Edition,508,2007-07-13
+9ED,Ninth Edition,359,2005-07-29
+8ED,Eighth Edition,360,2003-07-28
+7ED,Seventh Edition,354,2001-04-11
+6ED,Classic Sixth Edition,351,1999-04-21
+SOM,Scars of Mirrodin,249,2010-10-01
+5ED,Fifth Edition,460,1997-03-24
+4ED,Fourth Edition,379,1995-04-01
+AFC,Forgotten Realms Commander,331,2021-07-23
+3ED,Revised Edition,306,1994-04-01
+2ED,Unlimited Edition,302,1993-12-01
+LEB,Limited Edition Beta,302,1993-10-04
+LEA,Limited Edition Alpha,295,1993-08-05
+ROE,Rise of the Eldrazi,248,2010-04-23
+DDH,Duel Decks: Ajani vs. Nicol Bolas,80,2011-09-02
+NEO,Kamigawa: Neon Dynasty,512,2022-02-18
+CC2,Commander Collection: Black,9,2022-01-28
+UNF,Unfinity,638,2022-10-07
+DDC,Duel Decks: Divine vs. Demonic,62,2009-04-10
+DDF,Duel Decks: Elspeth vs. Tezzeret,79,2010-09-03
+EVG,Duel Decks Anthology: Elves vs. Goblins,62,2014-12-05
+VOC,Crimson Vow Commander,188,2021-11-19
+MIC,Midnight Hunt Commander,187,2021-09-24
+DDD,Duel Decks: Garruk vs. Liliana,63,2009-10-30
+DDJ,Duel Decks: Izzet vs. Golgari,90,2012-09-07
+DD2,Duel Decks: Jace vs. Chandra,64,2008-11-07
+DDG,Duel Decks: Knights vs. Dragons,81,2011-04-01
+DDE,Duel Decks: Phyrexia vs. the Coalition,71,2010-03-19
+WWK,Worldwake,145,2010-02-05
+DDI,Duel Decks: Venser vs. Koth,77,2012-03-30
+NEC,Neon Dynasty Commander,179,2022-02-18
+S99,Starter 1999,173,1999-07-01
+DBL,Innistrad: Double Feature,535,2022-01-28
+S00,Starter 2000,20,2000-04-01
+POR,Portal,256,1997-05-01
+P02,Portal Second Age,165,1998-06-24
+PTK,Portal Three Kingdoms,180,1999-07-06
+ARC,Archenemy,150,2010-06-18

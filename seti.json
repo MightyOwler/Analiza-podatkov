@@ -1,0 +1,1358 @@
+[
+    {
+        "set": "RTR",
+        "polno_ime": "Return to Ravnica",
+        "st_kart": 274,
+        "datum_izida": "2012-10-05"
+    },
+    {
+        "set": "ZEN",
+        "polno_ime": "Zendikar",
+        "st_kart": 269,
+        "datum_izida": "2009-10-02"
+    },
+    {
+        "set": "BRB",
+        "polno_ime": "Battle Royale Box Set",
+        "st_kart": 136,
+        "datum_izida": "1999-11-12"
+    },
+    {
+        "set": "SNC",
+        "polno_ime": "Streets of New Capenna",
+        "st_kart": 510,
+        "datum_izida": "2022-04-29"
+    },
+    {
+        "set": "NCC",
+        "polno_ime": "New Capenna Commander",
+        "st_kart": 447,
+        "datum_izida": "2022-04-29"
+    },
+    {
+        "set": "BTD",
+        "polno_ime": "Beatdown Box Set",
+        "st_kart": 90,
+        "datum_izida": "2000-10-01"
+    },
+    {
+        "set": "CHR",
+        "polno_ime": "Chronicles",
+        "st_kart": 125,
+        "datum_izida": "1995-07-01"
+    },
+    {
+        "set": "CMD",
+        "polno_ime": "Commander 2011",
+        "st_kart": 318,
+        "datum_izida": "2011-06-17"
+    },
+    {
+        "set": "HOP",
+        "polno_ime": "Planechase",
+        "st_kart": 169,
+        "datum_izida": "2009-09-04"
+    },
+    {
+        "set": "CSP",
+        "polno_ime": "Coldsnap",
+        "st_kart": 155,
+        "datum_izida": "2006-07-21"
+    },
+    {
+        "set": "PC2",
+        "polno_ime": "Planechase 2012",
+        "st_kart": 156,
+        "datum_izida": "2012-06-01"
+    },
+    {
+        "set": "UGL",
+        "polno_ime": "Unglued",
+        "st_kart": 88,
+        "datum_izida": "1998-08-11"
+    },
+    {
+        "set": "UNH",
+        "polno_ime": "Unhinged",
+        "st_kart": 168,
+        "datum_izida": "2004-11-19"
+    },
+    {
+        "set": "2X2",
+        "polno_ime": "Double Masters 2022",
+        "st_kart": 579,
+        "datum_izida": "2022-07-08"
+    },
+    {
+        "set": "PVAN",
+        "polno_ime": "Vanguard Series",
+        "st_kart": 32,
+        "datum_izida": "1997-05-01"
+    },
+    {
+        "set": "ARB",
+        "polno_ime": "Alara Reborn",
+        "st_kart": 145,
+        "datum_izida": "2009-04-30"
+    },
+    {
+        "set": "GTC",
+        "polno_ime": "Gatecrash",
+        "st_kart": 249,
+        "datum_izida": "2013-02-01"
+    },
+    {
+        "set": "CLB",
+        "polno_ime": "Commander Legends: Battle for Baldur's Gate",
+        "st_kart": 936,
+        "datum_izida": "2022-06-10"
+    },
+    {
+        "set": "DGM",
+        "polno_ime": "Dragon's Maze",
+        "st_kart": 156,
+        "datum_izida": "2013-05-03"
+    },
+    {
+        "set": "DDK",
+        "polno_ime": "Duel Decks: Sorin vs. Tibalt",
+        "st_kart": 80,
+        "datum_izida": "2013-03-15"
+    },
+    {
+        "set": "PFNM",
+        "polno_ime": "Friday Night Magic: Promos",
+        "st_kart": 230,
+        "datum_izida": null
+    },
+    {
+        "set": "DMU",
+        "polno_ime": "Dominaria United",
+        "st_kart": 434,
+        "datum_izida": "2022-09-09"
+    },
+    {
+        "set": "DMC",
+        "polno_ime": "Dominaria United Commander",
+        "st_kart": 240,
+        "datum_izida": "2022-09-09"
+    },
+    {
+        "set": "GN3",
+        "polno_ime": "Game Night: Free-for-All",
+        "st_kart": 135,
+        "datum_izida": "2022-10-14"
+    },
+    {
+        "set": "40K",
+        "polno_ime": "Warhammer 40,000 Commander",
+        "st_kart": 618,
+        "datum_izida": "2022-10-07"
+    },
+    {
+        "set": "PHED",
+        "polno_ime": "Heads I Win, Tails You Lose",
+        "st_kart": 82,
+        "datum_izida": "2022-04-22"
+    },
+    {
+        "set": "PMTG1",
+        "polno_ime": "Promos",
+        "st_kart": 2229,
+        "datum_izida": null
+    },
+    {
+        "set": "BRO",
+        "polno_ime": "The Brothers' War",
+        "st_kart": 97,
+        "datum_izida": "2022-11-18"
+    },
+    {
+        "set": "CON",
+        "polno_ime": "Conflux",
+        "st_kart": 145,
+        "datum_izida": "2009-02-06"
+    },
+    {
+        "set": "ALA",
+        "polno_ime": "Shards of Alara",
+        "st_kart": 250,
+        "datum_izida": "2008-10-03"
+    },
+    {
+        "set": "EVE",
+        "polno_ime": "Eventide",
+        "st_kart": 180,
+        "datum_izida": "2008-07-25"
+    },
+    {
+        "set": "SHM",
+        "polno_ime": "Shadowmoor",
+        "st_kart": 302,
+        "datum_izida": "2008-05-02"
+    },
+    {
+        "set": "MOR",
+        "polno_ime": "Morningtide",
+        "st_kart": 150,
+        "datum_izida": "2008-02-01"
+    },
+    {
+        "set": "LRW",
+        "polno_ime": "Lorwyn",
+        "st_kart": 301,
+        "datum_izida": "2007-10-12"
+    },
+    {
+        "set": "FUT",
+        "polno_ime": "Future Sight",
+        "st_kart": 180,
+        "datum_izida": "2007-05-04"
+    },
+    {
+        "set": "PLC",
+        "polno_ime": "Planar Chaos",
+        "st_kart": 165,
+        "datum_izida": "2007-02-02"
+    },
+    {
+        "set": "AVR",
+        "polno_ime": "Avacyn Restored",
+        "st_kart": 244,
+        "datum_izida": "2012-05-04"
+    },
+    {
+        "set": "TSP",
+        "polno_ime": "Time Spiral",
+        "st_kart": 301,
+        "datum_izida": "2006-10-06"
+    },
+    {
+        "set": "MMA",
+        "polno_ime": "Modern Masters",
+        "st_kart": 229,
+        "datum_izida": "2013-06-07"
+    },
+    {
+        "set": "M14",
+        "polno_ime": "Magic 2014",
+        "st_kart": 249,
+        "datum_izida": "2013-07-19"
+    },
+    {
+        "set": "THS",
+        "polno_ime": "Theros",
+        "st_kart": 249,
+        "datum_izida": "2013-09-27"
+    },
+    {
+        "set": "DDL",
+        "polno_ime": "Duel Decks: Heroes vs. Monsters",
+        "st_kart": 81,
+        "datum_izida": "2013-09-06"
+    },
+    {
+        "set": "C13",
+        "polno_ime": "Commander 2013",
+        "st_kart": 356,
+        "datum_izida": "2013-11-01"
+    },
+    {
+        "set": "BNG",
+        "polno_ime": "Born of the Gods",
+        "st_kart": 165,
+        "datum_izida": "2014-02-07"
+    },
+    {
+        "set": "DIS",
+        "polno_ime": "Dissension",
+        "st_kart": 180,
+        "datum_izida": "2006-05-05"
+    },
+    {
+        "set": "DDM",
+        "polno_ime": "Duel Decks: Jace vs. Vraska",
+        "st_kart": 88,
+        "datum_izida": "2014-03-14"
+    },
+    {
+        "set": "JOU",
+        "polno_ime": "Journey into Nyx",
+        "st_kart": 165,
+        "datum_izida": "2014-05-02"
+    },
+    {
+        "set": "CNS",
+        "polno_ime": "Conspiracy",
+        "st_kart": 210,
+        "datum_izida": "2014-06-06"
+    },
+    {
+        "set": "MD1",
+        "polno_ime": "Modern Event Deck 2014",
+        "st_kart": 26,
+        "datum_izida": "2014-05-30"
+    },
+    {
+        "set": "M15",
+        "polno_ime": "Magic 2015",
+        "st_kart": 284,
+        "datum_izida": "2014-07-18"
+    },
+    {
+        "set": "DDN",
+        "polno_ime": "Duel Decks: Speed vs. Cunning",
+        "st_kart": 82,
+        "datum_izida": "2014-09-05"
+    },
+    {
+        "set": "KTK",
+        "polno_ime": "Khans of Tarkir",
+        "st_kart": 269,
+        "datum_izida": "2014-09-26"
+    },
+    {
+        "set": "GPT",
+        "polno_ime": "Guildpact",
+        "st_kart": 166,
+        "datum_izida": "2006-02-03"
+    },
+    {
+        "set": "C14",
+        "polno_ime": "Commander 2014",
+        "st_kart": 337,
+        "datum_izida": "2014-11-07"
+    },
+    {
+        "set": "DD3",
+        "polno_ime": "Duel Decks: Anthology",
+        "st_kart": 212,
+        "datum_izida": "2014-12-05"
+    },
+    {
+        "set": "FRF",
+        "polno_ime": "Fate Reforged",
+        "st_kart": 191,
+        "datum_izida": "2015-01-23"
+    },
+    {
+        "set": "DDO",
+        "polno_ime": "Duel Decks: Elspeth vs. Kiora",
+        "st_kart": 67,
+        "datum_izida": "2015-02-27"
+    },
+    {
+        "set": "DTK",
+        "polno_ime": "Dragons of Tarkir",
+        "st_kart": 264,
+        "datum_izida": "2015-03-27"
+    },
+    {
+        "set": "MM2",
+        "polno_ime": "Modern Masters 2015",
+        "st_kart": 249,
+        "datum_izida": "2015-05-22"
+    },
+    {
+        "set": "ORI",
+        "polno_ime": "Magic Origins",
+        "st_kart": 288,
+        "datum_izida": "2015-07-17"
+    },
+    {
+        "set": "RAV",
+        "polno_ime": "Ravnica: City of Guilds",
+        "st_kart": 306,
+        "datum_izida": "2005-10-07"
+    },
+    {
+        "set": "DDP",
+        "polno_ime": "Duel Decks: Zendikar vs. Eldrazi",
+        "st_kart": 80,
+        "datum_izida": "2015-08-28"
+    },
+    {
+        "set": "BFZ",
+        "polno_ime": "Battle for Zendikar",
+        "st_kart": 299,
+        "datum_izida": "2015-10-02"
+    },
+    {
+        "set": "C15",
+        "polno_ime": "Commander 2015",
+        "st_kart": 342,
+        "datum_izida": "2015-11-13"
+    },
+    {
+        "set": "OGW",
+        "polno_ime": "Oath of the Gatewatch",
+        "st_kart": 187,
+        "datum_izida": "2016-01-22"
+    },
+    {
+        "set": "DDQ",
+        "polno_ime": "Duel Decks: Blessed vs. Cursed",
+        "st_kart": 80,
+        "datum_izida": "2016-02-26"
+    },
+    {
+        "set": "DKM",
+        "polno_ime": "Deckmasters",
+        "st_kart": 58,
+        "datum_izida": "2001-12-01"
+    },
+    {
+        "set": "SOI",
+        "polno_ime": "Shadows over Innistrad",
+        "st_kart": 302,
+        "datum_izida": "2016-04-08"
+    },
+    {
+        "set": "SOK",
+        "polno_ime": "Saviors of Kamigawa",
+        "st_kart": 165,
+        "datum_izida": "2005-06-03"
+    },
+    {
+        "set": "EMA",
+        "polno_ime": "Eternal Masters",
+        "st_kart": 249,
+        "datum_izida": "2016-06-10"
+    },
+    {
+        "set": "EMN",
+        "polno_ime": "Eldritch Moon",
+        "st_kart": 208,
+        "datum_izida": "2016-07-22"
+    },
+    {
+        "set": "CN2",
+        "polno_ime": "Conspiracy: Take the Crown",
+        "st_kart": 222,
+        "datum_izida": "2016-08-26"
+    },
+    {
+        "set": "KLD",
+        "polno_ime": "Kaladesh",
+        "st_kart": 278,
+        "datum_izida": "2016-09-30"
+    },
+    {
+        "set": "C16",
+        "polno_ime": "Commander 2016",
+        "st_kart": 351,
+        "datum_izida": "2016-11-11"
+    },
+    {
+        "set": "AER",
+        "polno_ime": "Aether Revolt",
+        "st_kart": 197,
+        "datum_izida": "2017-01-20"
+    },
+    {
+        "set": "PCA",
+        "polno_ime": "Planechase Anthology",
+        "st_kart": 156,
+        "datum_izida": "2016-11-25"
+    },
+    {
+        "set": "DDR",
+        "polno_ime": "Duel Decks: Nissa vs. Ob Nixilis",
+        "st_kart": 76,
+        "datum_izida": "2016-09-02"
+    },
+    {
+        "set": "BOK",
+        "polno_ime": "Betrayers of Kamigawa",
+        "st_kart": 165,
+        "datum_izida": "2005-02-04"
+    },
+    {
+        "set": "CED",
+        "polno_ime": "Collectors’ Edition",
+        "st_kart": 302,
+        "datum_izida": "1993-12-10"
+    },
+    {
+        "set": "MM3",
+        "polno_ime": "Modern Masters 2017",
+        "st_kart": 249,
+        "datum_izida": "2017-03-17"
+    },
+    {
+        "set": "DDS",
+        "polno_ime": "Duel Decks: Mind vs. Might",
+        "st_kart": 65,
+        "datum_izida": "2017-03-31"
+    },
+    {
+        "set": "AKH",
+        "polno_ime": "Amonkhet",
+        "st_kart": 287,
+        "datum_izida": "2017-04-28"
+    },
+    {
+        "set": "PARL2",
+        "polno_ime": "Arena Promos",
+        "st_kart": 86,
+        "datum_izida": null
+    },
+    {
+        "set": "E01",
+        "polno_ime": "Archenemy: Nicol Bolas",
+        "st_kart": 106,
+        "datum_izida": "2017-06-16"
+    },
+    {
+        "set": "HOU",
+        "polno_ime": "Hour of Devastation",
+        "st_kart": 209,
+        "datum_izida": "2017-07-14"
+    },
+    {
+        "set": "CHK",
+        "polno_ime": "Champions of Kamigawa",
+        "st_kart": 307,
+        "datum_izida": "2004-10-01"
+    },
+    {
+        "set": "XLN",
+        "polno_ime": "Ixalan",
+        "st_kart": 289,
+        "datum_izida": "2017-09-29"
+    },
+    {
+        "set": "RIX",
+        "polno_ime": "Rivals of Ixalan",
+        "st_kart": 205,
+        "datum_izida": "2018-01-19"
+    },
+    {
+        "set": "UST",
+        "polno_ime": "Unstable",
+        "st_kart": 268,
+        "datum_izida": "2017-12-08"
+    },
+    {
+        "set": "E02",
+        "polno_ime": "Explorers of Ixalan",
+        "st_kart": 48,
+        "datum_izida": "2017-11-24"
+    },
+    {
+        "set": "C17",
+        "polno_ime": "Commander 2017",
+        "st_kart": 309,
+        "datum_izida": "2017-08-25"
+    },
+    {
+        "set": "DDT",
+        "polno_ime": "Duel Decks: Merfolk vs. Goblins",
+        "st_kart": 63,
+        "datum_izida": "2017-10-24"
+    },
+    {
+        "set": "IMA",
+        "polno_ime": "Iconic Masters",
+        "st_kart": 249,
+        "datum_izida": "2017-11-17"
+    },
+    {
+        "set": "CMA",
+        "polno_ime": "Commander Anthology",
+        "st_kart": 320,
+        "datum_izida": "2017-06-09"
+    },
+    {
+        "set": "5DN",
+        "polno_ime": "Fifth Dawn",
+        "st_kart": 165,
+        "datum_izida": "2004-06-04"
+    },
+    {
+        "set": "DOM",
+        "polno_ime": "Dominaria",
+        "st_kart": 280,
+        "datum_izida": "2018-04-27"
+    },
+    {
+        "set": "DDU",
+        "polno_ime": "Duel Decks: Elves vs. Inventors",
+        "st_kart": 76,
+        "datum_izida": "2018-04-06"
+    },
+    {
+        "set": "A25",
+        "polno_ime": "Masters 25",
+        "st_kart": 249,
+        "datum_izida": "2018-03-16"
+    },
+    {
+        "set": "W16",
+        "polno_ime": "Welcome Deck 2016",
+        "st_kart": 16,
+        "datum_izida": "2016-04-08"
+    },
+    {
+        "set": "W17",
+        "polno_ime": "Welcome Deck 2017",
+        "st_kart": 30,
+        "datum_izida": "2017-04-15"
+    },
+    {
+        "set": "M19",
+        "polno_ime": "Core Set 2019",
+        "st_kart": 314,
+        "datum_izida": "2018-07-13"
+    },
+    {
+        "set": "BBD",
+        "polno_ime": "Battlebond",
+        "st_kart": 256,
+        "datum_izida": "2018-06-08"
+    },
+    {
+        "set": "CM2",
+        "polno_ime": "Commander Anthology Volume II",
+        "st_kart": 312,
+        "datum_izida": "2018-06-08"
+    },
+    {
+        "set": "DKA",
+        "polno_ime": "Dark Ascension",
+        "st_kart": 158,
+        "datum_izida": "2012-02-03"
+    },
+    {
+        "set": "DST",
+        "polno_ime": "Darksteel",
+        "st_kart": 165,
+        "datum_izida": "2004-02-06"
+    },
+    {
+        "set": "C18",
+        "polno_ime": "Commander 2018",
+        "st_kart": 307,
+        "datum_izida": "2018-08-09"
+    },
+    {
+        "set": "SS1",
+        "polno_ime": "Signature Spellbook: Jace",
+        "st_kart": 8,
+        "datum_izida": "2018-06-15"
+    },
+    {
+        "set": "GS1",
+        "polno_ime": "Global Series Jiang Yanggu &amp; Mu Yanling",
+        "st_kart": 41,
+        "datum_izida": "2018-06-22"
+    },
+    {
+        "set": "FBB",
+        "polno_ime": "Foreign Black Border",
+        "st_kart": 307,
+        "datum_izida": "1994-04-01"
+    },
+    {
+        "set": "ATH",
+        "polno_ime": "Anthologies",
+        "st_kart": 85,
+        "datum_izida": "1998-11-01"
+    },
+    {
+        "set": "GRN",
+        "polno_ime": "Guilds of Ravnica",
+        "st_kart": 273,
+        "datum_izida": "2018-10-05"
+    },
+    {
+        "set": "MRD",
+        "polno_ime": "Mirrodin",
+        "st_kart": 306,
+        "datum_izida": "2003-10-02"
+    },
+    {
+        "set": "RNA",
+        "polno_ime": "Ravnica Allegiance",
+        "st_kart": 273,
+        "datum_izida": "2019-01-25"
+    },
+    {
+        "set": "MED",
+        "polno_ime": "Mythic Edition",
+        "st_kart": 24,
+        "datum_izida": "2018-10-05"
+    },
+    {
+        "set": "GK1",
+        "polno_ime": "GRN Guild Kit",
+        "st_kart": 127,
+        "datum_izida": "2018-11-02"
+    },
+    {
+        "set": "UMA",
+        "polno_ime": "Ultimate Masters",
+        "st_kart": 254,
+        "datum_izida": "2018-12-07"
+    },
+    {
+        "set": "SCG",
+        "polno_ime": "Scourge",
+        "st_kart": 143,
+        "datum_izida": "2003-05-26"
+    },
+    {
+        "set": "GNT",
+        "polno_ime": "Game Night",
+        "st_kart": 68,
+        "datum_izida": "2018-11-16"
+    },
+    {
+        "set": "WAR",
+        "polno_ime": "War of the Spark",
+        "st_kart": 312,
+        "datum_izida": "2019-05-03"
+    },
+    {
+        "set": "MH1",
+        "polno_ime": "Modern Horizons",
+        "st_kart": 255,
+        "datum_izida": "2019-06-14"
+    },
+    {
+        "set": "SS2",
+        "polno_ime": "Signature Spellbook: Gideon",
+        "st_kart": 8,
+        "datum_izida": "2019-06-28"
+    },
+    {
+        "set": "LGN",
+        "polno_ime": "Legions",
+        "st_kart": 145,
+        "datum_izida": "2003-02-03"
+    },
+    {
+        "set": "M20",
+        "polno_ime": "Core Set 2020",
+        "st_kart": 345,
+        "datum_izida": "2019-07-12"
+    },
+    {
+        "set": "ELD",
+        "polno_ime": "Throne of Eldraine",
+        "st_kart": 399,
+        "datum_izida": "2019-10-04"
+    },
+    {
+        "set": "C19",
+        "polno_ime": "Commander 2019",
+        "st_kart": 302,
+        "datum_izida": "2019-08-23"
+    },
+    {
+        "set": "CEI",
+        "polno_ime": "Intl. Collectors’ Edition",
+        "st_kart": 302,
+        "datum_izida": "1993-12-10"
+    },
+    {
+        "set": "THB",
+        "polno_ime": "Theros Beyond Death",
+        "st_kart": 358,
+        "datum_izida": "2020-01-24"
+    },
+    {
+        "set": "M21",
+        "polno_ime": "Core Set 2021",
+        "st_kart": 397,
+        "datum_izida": "2020-07-03"
+    },
+    {
+        "set": "IKO",
+        "polno_ime": "Ikoria: Lair of Behemoths",
+        "st_kart": 390,
+        "datum_izida": "2020-04-24"
+    },
+    {
+        "set": "ZNR",
+        "polno_ime": "Zendikar Rising",
+        "st_kart": 408,
+        "datum_izida": "2020-09-25"
+    },
+    {
+        "set": "ONS",
+        "polno_ime": "Onslaught",
+        "st_kart": 351,
+        "datum_izida": "2002-10-07"
+    },
+    {
+        "set": "GN2",
+        "polno_ime": "Game Night 2019",
+        "st_kart": 64,
+        "datum_izida": "2019-11-15"
+    },
+    {
+        "set": "MB1",
+        "polno_ime": "Mystery Booster",
+        "st_kart": 1697,
+        "datum_izida": "2019-11-07"
+    },
+    {
+        "set": "FMB1",
+        "polno_ime": "Mystery Booster Retail Edition Foils",
+        "st_kart": 121,
+        "datum_izida": "2020-03-08"
+    },
+    {
+        "set": "PMEI",
+        "polno_ime": "Media Inserts",
+        "st_kart": 45,
+        "datum_izida": "1995-01-01"
+    },
+    {
+        "set": "UND",
+        "polno_ime": "Unsanctioned",
+        "st_kart": 96,
+        "datum_izida": "2020-02-29"
+    },
+    {
+        "set": "ZNC",
+        "polno_ime": "Zendikar Rising Commander",
+        "st_kart": 142,
+        "datum_izida": "2020-09-25"
+    },
+    {
+        "set": "CMR",
+        "polno_ime": "Commander Legends",
+        "st_kart": 718,
+        "datum_izida": "2020-11-20"
+    },
+    {
+        "set": "CC1",
+        "polno_ime": "Commander Collection: Green",
+        "st_kart": 8,
+        "datum_izida": "2020-12-04"
+    },
+    {
+        "set": "JUD",
+        "polno_ime": "Judgment",
+        "st_kart": 143,
+        "datum_izida": "2002-05-27"
+    },
+    {
+        "set": "C20",
+        "polno_ime": "Commander 2020",
+        "st_kart": 322,
+        "datum_izida": "2020-04-17"
+    },
+    {
+        "set": "SS3",
+        "polno_ime": "Signature Spellbook: Chandra",
+        "st_kart": 8,
+        "datum_izida": "2020-06-26"
+    },
+    {
+        "set": "2XM",
+        "polno_ime": "Double Masters",
+        "st_kart": 384,
+        "datum_izida": "2020-08-07"
+    },
+    {
+        "set": "JMP",
+        "polno_ime": "Jumpstart",
+        "st_kart": 497,
+        "datum_izida": "2020-07-17"
+    },
+    {
+        "set": "TSR",
+        "polno_ime": "Time Spiral Remastered",
+        "st_kart": 411,
+        "datum_izida": "2021-03-19"
+    },
+    {
+        "set": "TOR",
+        "polno_ime": "Torment",
+        "st_kart": 143,
+        "datum_izida": "2002-02-04"
+    },
+    {
+        "set": "KHM",
+        "polno_ime": "Kaldheim",
+        "st_kart": 424,
+        "datum_izida": "2021-02-05"
+    },
+    {
+        "set": "STX",
+        "polno_ime": "Strixhaven: School of Mages",
+        "st_kart": 393,
+        "datum_izida": "2021-04-23"
+    },
+    {
+        "set": "AFR",
+        "polno_ime": "Adventures in the Forgotten Realms",
+        "st_kart": 422,
+        "datum_izida": "2021-07-23"
+    },
+    {
+        "set": "MH2",
+        "polno_ime": "Modern Horizons 2",
+        "st_kart": 494,
+        "datum_izida": "2021-06-18"
+    },
+    {
+        "set": "ZNE",
+        "polno_ime": "Zendikar Rising Expeditions",
+        "st_kart": 30,
+        "datum_izida": "2020-09-25"
+    },
+    {
+        "set": "VOW",
+        "polno_ime": "Innistrad: Crimson Vow",
+        "st_kart": 417,
+        "datum_izida": "2021-11-19"
+    },
+    {
+        "set": "MID",
+        "polno_ime": "Innistrad: Midnight Hunt",
+        "st_kart": 396,
+        "datum_izida": "2021-09-24"
+    },
+    {
+        "set": "PSUM",
+        "polno_ime": "Summer of Magic",
+        "st_kart": 2,
+        "datum_izida": "2007-07-21"
+    },
+    {
+        "set": "ODY",
+        "polno_ime": "Odyssey",
+        "st_kart": 352,
+        "datum_izida": "2001-10-01"
+    },
+    {
+        "set": "APC",
+        "polno_ime": "Apocalypse",
+        "st_kart": 143,
+        "datum_izida": "2001-06-04"
+    },
+    {
+        "set": "KHC",
+        "polno_ime": "Kaldheim Commander",
+        "st_kart": 119,
+        "datum_izida": "2021-02-05"
+    },
+    {
+        "set": "PLS",
+        "polno_ime": "Planeshift",
+        "st_kart": 146,
+        "datum_izida": "2001-02-05"
+    },
+    {
+        "set": "ISD",
+        "polno_ime": "Innistrad",
+        "st_kart": 264,
+        "datum_izida": "2011-09-30"
+    },
+    {
+        "set": "INV",
+        "polno_ime": "Invasion",
+        "st_kart": 352,
+        "datum_izida": "2000-10-02"
+    },
+    {
+        "set": "PCY",
+        "polno_ime": "Prophecy",
+        "st_kart": 144,
+        "datum_izida": "2000-06-05"
+    },
+    {
+        "set": "NEM",
+        "polno_ime": "Nemesis",
+        "st_kart": 143,
+        "datum_izida": "2000-02-14"
+    },
+    {
+        "set": "MMQ",
+        "polno_ime": "Mercadian Masques",
+        "st_kart": 350,
+        "datum_izida": "1999-10-04"
+    },
+    {
+        "set": "UDS",
+        "polno_ime": "Urza's Destiny",
+        "st_kart": 143,
+        "datum_izida": "1999-06-07"
+    },
+    {
+        "set": "STA",
+        "polno_ime": "Strixhaven Mystical Archive",
+        "st_kart": 126,
+        "datum_izida": "2021-04-23"
+    },
+    {
+        "set": "ULG",
+        "polno_ime": "Urza's Legacy",
+        "st_kart": 143,
+        "datum_izida": "1999-02-15"
+    },
+    {
+        "set": "USG",
+        "polno_ime": "Urza's Saga",
+        "st_kart": 356,
+        "datum_izida": "1998-10-12"
+    },
+    {
+        "set": "EXO",
+        "polno_ime": "Exodus",
+        "st_kart": 143,
+        "datum_izida": "1998-06-15"
+    },
+    {
+        "set": "STH",
+        "polno_ime": "Stronghold",
+        "st_kart": 143,
+        "datum_izida": "1998-03-02"
+    },
+    {
+        "set": "TMP",
+        "polno_ime": "Tempest",
+        "st_kart": 350,
+        "datum_izida": "1997-10-14"
+    },
+    {
+        "set": "NPH",
+        "polno_ime": "New Phyrexia",
+        "st_kart": 175,
+        "datum_izida": "2011-05-13"
+    },
+    {
+        "set": "WTH",
+        "polno_ime": "Weatherlight",
+        "st_kart": 167,
+        "datum_izida": "1997-06-09"
+    },
+    {
+        "set": "VIS",
+        "polno_ime": "Visions",
+        "st_kart": 167,
+        "datum_izida": "1997-02-03"
+    },
+    {
+        "set": "C21",
+        "polno_ime": "Commander 2021",
+        "st_kart": 409,
+        "datum_izida": "2021-04-23"
+    },
+    {
+        "set": "MIR",
+        "polno_ime": "Mirage",
+        "st_kart": 351,
+        "datum_izida": "1996-10-08"
+    },
+    {
+        "set": "ALL",
+        "polno_ime": "Alliances",
+        "st_kart": 199,
+        "datum_izida": "1996-06-10"
+    },
+    {
+        "set": "HML",
+        "polno_ime": "Homelands",
+        "st_kart": 140,
+        "datum_izida": "1995-10-01"
+    },
+    {
+        "set": "ICE",
+        "polno_ime": "Ice Age",
+        "st_kart": 383,
+        "datum_izida": "1995-06-03"
+    },
+    {
+        "set": "FEM",
+        "polno_ime": "Fallen Empires",
+        "st_kart": 187,
+        "datum_izida": "1994-11-01"
+    },
+    {
+        "set": "DRK",
+        "polno_ime": "The Dark",
+        "st_kart": 122,
+        "datum_izida": "1994-08-01"
+    },
+    {
+        "set": "LEG",
+        "polno_ime": "Legends",
+        "st_kart": 310,
+        "datum_izida": "1994-06-01"
+    },
+    {
+        "set": "ATQ",
+        "polno_ime": "Antiquities",
+        "st_kart": 102,
+        "datum_izida": "1994-03-04"
+    },
+    {
+        "set": "MBS",
+        "polno_ime": "Mirrodin Besieged",
+        "st_kart": 155,
+        "datum_izida": "2011-02-04"
+    },
+    {
+        "set": "ARN",
+        "polno_ime": "Arabian Nights",
+        "st_kart": 92,
+        "datum_izida": "1993-12-17"
+    },
+    {
+        "set": "M13",
+        "polno_ime": "Magic 2013",
+        "st_kart": 249,
+        "datum_izida": "2012-07-13"
+    },
+    {
+        "set": "M12",
+        "polno_ime": "Magic 2012",
+        "st_kart": 249,
+        "datum_izida": "2011-07-15"
+    },
+    {
+        "set": "M11",
+        "polno_ime": "Magic 2011",
+        "st_kart": 249,
+        "datum_izida": "2010-07-16"
+    },
+    {
+        "set": "M10",
+        "polno_ime": "Magic 2010",
+        "st_kart": 249,
+        "datum_izida": "2009-07-17"
+    },
+    {
+        "set": "10E",
+        "polno_ime": "Tenth Edition",
+        "st_kart": 508,
+        "datum_izida": "2007-07-13"
+    },
+    {
+        "set": "9ED",
+        "polno_ime": "Ninth Edition",
+        "st_kart": 359,
+        "datum_izida": "2005-07-29"
+    },
+    {
+        "set": "8ED",
+        "polno_ime": "Eighth Edition",
+        "st_kart": 360,
+        "datum_izida": "2003-07-28"
+    },
+    {
+        "set": "7ED",
+        "polno_ime": "Seventh Edition",
+        "st_kart": 354,
+        "datum_izida": "2001-04-11"
+    },
+    {
+        "set": "6ED",
+        "polno_ime": "Classic Sixth Edition",
+        "st_kart": 351,
+        "datum_izida": "1999-04-21"
+    },
+    {
+        "set": "SOM",
+        "polno_ime": "Scars of Mirrodin",
+        "st_kart": 249,
+        "datum_izida": "2010-10-01"
+    },
+    {
+        "set": "5ED",
+        "polno_ime": "Fifth Edition",
+        "st_kart": 460,
+        "datum_izida": "1997-03-24"
+    },
+    {
+        "set": "4ED",
+        "polno_ime": "Fourth Edition",
+        "st_kart": 379,
+        "datum_izida": "1995-04-01"
+    },
+    {
+        "set": "AFC",
+        "polno_ime": "Forgotten Realms Commander",
+        "st_kart": 331,
+        "datum_izida": "2021-07-23"
+    },
+    {
+        "set": "3ED",
+        "polno_ime": "Revised Edition",
+        "st_kart": 306,
+        "datum_izida": "1994-04-01"
+    },
+    {
+        "set": "2ED",
+        "polno_ime": "Unlimited Edition",
+        "st_kart": 302,
+        "datum_izida": "1993-12-01"
+    },
+    {
+        "set": "LEB",
+        "polno_ime": "Limited Edition Beta",
+        "st_kart": 302,
+        "datum_izida": "1993-10-04"
+    },
+    {
+        "set": "LEA",
+        "polno_ime": "Limited Edition Alpha",
+        "st_kart": 295,
+        "datum_izida": "1993-08-05"
+    },
+    {
+        "set": "ROE",
+        "polno_ime": "Rise of the Eldrazi",
+        "st_kart": 248,
+        "datum_izida": "2010-04-23"
+    },
+    {
+        "set": "DDH",
+        "polno_ime": "Duel Decks: Ajani vs. Nicol Bolas",
+        "st_kart": 80,
+        "datum_izida": "2011-09-02"
+    },
+    {
+        "set": "NEO",
+        "polno_ime": "Kamigawa: Neon Dynasty",
+        "st_kart": 512,
+        "datum_izida": "2022-02-18"
+    },
+    {
+        "set": "CC2",
+        "polno_ime": "Commander Collection: Black",
+        "st_kart": 9,
+        "datum_izida": "2022-01-28"
+    },
+    {
+        "set": "UNF",
+        "polno_ime": "Unfinity",
+        "st_kart": 638,
+        "datum_izida": "2022-10-07"
+    },
+    {
+        "set": "DDC",
+        "polno_ime": "Duel Decks: Divine vs. Demonic",
+        "st_kart": 62,
+        "datum_izida": "2009-04-10"
+    },
+    {
+        "set": "DDF",
+        "polno_ime": "Duel Decks: Elspeth vs. Tezzeret",
+        "st_kart": 79,
+        "datum_izida": "2010-09-03"
+    },
+    {
+        "set": "EVG",
+        "polno_ime": "Duel Decks Anthology: Elves vs. Goblins",
+        "st_kart": 62,
+        "datum_izida": "2014-12-05"
+    },
+    {
+        "set": "VOC",
+        "polno_ime": "Crimson Vow Commander",
+        "st_kart": 188,
+        "datum_izida": "2021-11-19"
+    },
+    {
+        "set": "MIC",
+        "polno_ime": "Midnight Hunt Commander",
+        "st_kart": 187,
+        "datum_izida": "2021-09-24"
+    },
+    {
+        "set": "DDD",
+        "polno_ime": "Duel Decks: Garruk vs. Liliana",
+        "st_kart": 63,
+        "datum_izida": "2009-10-30"
+    },
+    {
+        "set": "DDJ",
+        "polno_ime": "Duel Decks: Izzet vs. Golgari",
+        "st_kart": 90,
+        "datum_izida": "2012-09-07"
+    },
+    {
+        "set": "DD2",
+        "polno_ime": "Duel Decks: Jace vs. Chandra",
+        "st_kart": 64,
+        "datum_izida": "2008-11-07"
+    },
+    {
+        "set": "DDG",
+        "polno_ime": "Duel Decks: Knights vs. Dragons",
+        "st_kart": 81,
+        "datum_izida": "2011-04-01"
+    },
+    {
+        "set": "DDE",
+        "polno_ime": "Duel Decks: Phyrexia vs. the Coalition",
+        "st_kart": 71,
+        "datum_izida": "2010-03-19"
+    },
+    {
+        "set": "WWK",
+        "polno_ime": "Worldwake",
+        "st_kart": 145,
+        "datum_izida": "2010-02-05"
+    },
+    {
+        "set": "DDI",
+        "polno_ime": "Duel Decks: Venser vs. Koth",
+        "st_kart": 77,
+        "datum_izida": "2012-03-30"
+    },
+    {
+        "set": "NEC",
+        "polno_ime": "Neon Dynasty Commander",
+        "st_kart": 179,
+        "datum_izida": "2022-02-18"
+    },
+    {
+        "set": "S99",
+        "polno_ime": "Starter 1999",
+        "st_kart": 173,
+        "datum_izida": "1999-07-01"
+    },
+    {
+        "set": "DBL",
+        "polno_ime": "Innistrad: Double Feature",
+        "st_kart": 535,
+        "datum_izida": "2022-01-28"
+    },
+    {
+        "set": "S00",
+        "polno_ime": "Starter 2000",
+        "st_kart": 20,
+        "datum_izida": "2000-04-01"
+    },
+    {
+        "set": "POR",
+        "polno_ime": "Portal",
+        "st_kart": 256,
+        "datum_izida": "1997-05-01"
+    },
+    {
+        "set": "P02",
+        "polno_ime": "Portal Second Age",
+        "st_kart": 165,
+        "datum_izida": "1998-06-24"
+    },
+    {
+        "set": "PTK",
+        "polno_ime": "Portal Three Kingdoms",
+        "st_kart": 180,
+        "datum_izida": "1999-07-06"
+    },
+    {
+        "set": "ARC",
+        "polno_ime": "Archenemy",
+        "st_kart": 150,
+        "datum_izida": "2010-06-18"
+    }
+]
