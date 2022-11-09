@@ -8,6 +8,7 @@ problematicni_tipi = ["Token", "Emblem"] # Morda lahko dodam Basic
 color_pentagon = "wubrg"
 slovar_za_popravljanje_napacnih_podatkov_s_spletne_strani = {'set': {"VAN" : "PVAN", "SLDC": "PHED", "XCLE": "CED", "XICE": "CEI", "RMB1": "FMB1", "XDND" : "AFR", "2E": "LEB", "2U": "2ED", "1E": "LEA", "PO2": "P02", "3ED":"FBB", "3E":"3ED"}}
 
+URL_DO_STRANI_SETOV = "https://scryfall.com/sets"
 FILENAME_KARTE_CSV = os.path.join("Podatki", "Tabele_in_JSON", "karte.csv")
 FILENAME_KARTE_JSON = os.path.join("Podatki", "Tabele_in_JSON", "karte.json")
 FILENAME_KARTE_DODATEK_CSV = os.path.join("Podatki", "Tabele_in_JSON", "dodatni_podatki_o_kartah.csv")

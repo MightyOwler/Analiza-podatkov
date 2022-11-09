@@ -129,6 +129,4 @@ dmypy.json
 .pyre/
 
 Analiza podatkov.code-workspace
-testni_zajcek.txt
-karte.csv
 *.html
