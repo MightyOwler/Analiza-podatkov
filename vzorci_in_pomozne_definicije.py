@@ -1,11 +1,19 @@
 import re
 from datetime import datetime
+import os
 
 seznam_supertypov = ["Basic", "Legendary", "Ongoing", "Snow", "World"]
 problematicni_seti = ["PFNM", "PMTG1", "DD3", "PARL2"]
 problematicni_tipi = ["Token", "Emblem"] # Morda lahko dodam Basic
 color_pentagon = "wubrg"
+slovar_za_popravljanje_napacnih_podatkov_s_spletne_strani = {'set': {"VAN" : "PVAN", "SLDC": "PHED", "XCLE": "CED", "XICE": "CEI", "RMB1": "FMB1", "XDND" : "AFR", "2E": "LEB", "2U": "2ED", "1E": "LEA", "PO2": "P02", "3ED":"FBB", "3E":"3ED"}}
 
+FILENAME_KARTE_CSV = os.path.join("Podatki", "Tabele_in_JSON", "karte.csv")
+FILENAME_KARTE_JSON = os.path.join("Podatki", "Tabele_in_JSON", "karte.json")
+FILENAME_KARTE_DODATEK_CSV = os.path.join("Podatki", "Tabele_in_JSON", "dodatni_podatki_o_kartah.csv")
+FILENAME_SETI_CSV = os.path.join("Podatki", "Tabele_in_JSON", "seti.csv")
+FILENAME_SETI_JSON = os.path.join("Podatki", "Tabele_in_JSON", "seti.json")
+FILENAME_POPOLNI_PODATKI_KARTE_JSON = os.path.join("Podatki", "Tabele_in_JSON", "popolni_podatki_o_kartah.json")
 
 # Pomožne funkcije
 ###########################################################################################
@@ -373,5 +381,3 @@ vzorec_za_popravo_oracle_texta_planeswalker_downtake = re.compile(
 
 vzorec_za_manacost = re.compile(r'" class="ms ms-cost ms-(?P<mana_cost>.*?)["| ]',
                                 flags=re.DOTALL)
-
-
