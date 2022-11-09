@@ -1,7 +1,10 @@
 import re
+from datetime import datetime
 
 seznam_supertypov = ["Basic", "Legendary", "Ongoing", "Snow", "World"]
 problematicni_seti = ["PFNM", "PMTG1", "DD3", "PARL2"]
+problematicni_tipi = ["Token", "Emblem"] # Morda lahko dodam Basic
+color_pentagon = "wubrg"
 
 
 # Pomožne funkcije
@@ -156,7 +159,149 @@ def izlusci_podatke_o_specificni_karti_iz_njene_datoteke(niz):
     return {"povprecje_eu": povprecje_eu, "supertype": supertype, "cardtype": cardtype, "subtype": subtype, "oracle_text": oracle_text, "reserved_list":reserved_list, "all_time_low": all_time_low, "all_time_low_datum": all_time_low_datum, "all_time_high": all_time_high, "all_time_high_datum": all_time_high_datum}
 
 
+# Pomožne funkcije za čiščenje podatkov
+###########################################################################################
 
+
+def pretvori_datum_v_datetime(string_datuma):
+    """
+    Funkcija, ki obe vrsti datuma pretvori v ustretno datetime obliko (datum_izida in datum all_time_high/low)
+    """
+    
+    # Za vsak slučaj
+    if not string_datuma:
+        return None
+    
+    # Ločimo primera 'Apr 29, 2022' in '2022-04-29'
+    if "," in string_datuma:
+        return datetime.strptime(string_datuma, "%b %d, %Y")
+    else:
+        return datetime.strptime(string_datuma, "%Y-%m-%d")
+    
+
+def popravi_cardtype_aftermath(seznam_cardtypa):
+    """
+    Popravimo seznam cardtypa, ki se pojavi zaradi nenavadnega/nekonsistentnega zapisa Aftermath kart na spletni strani
+    """
+    if not seznam_cardtypa:
+        return None
+    
+    popravljen_seznam = []
+    for tip in seznam_cardtypa:
+        if tip not in popravljen_seznam and "//" not in tip:
+            popravljen_seznam.append(tip)
+    return popravljen_seznam
+
+
+def popravi_subtype_adventure(seznam_subtypa):
+    """
+    Popravimo seznam subtypa, ki se pojavi zaradi nenavadnega/nekonsistentnega zapisa Adventure kart na spletni strani
+    """
+    if not seznam_subtypa:
+        return None
+    
+    popravljen_seznam = []
+    for tip in seznam_subtypa:
+        if "//" in tip:
+                break
+        elif tip not in popravljen_seznam:
+            popravljen_seznam.append(tip)
+    return popravljen_seznam
+
+def vsebovanost_problematicnih_karte_na_podlagi_seznama(seznam, seznam_problematicnih_elementov = problematicni_tipi):
+    """
+    Preverimo, ali določen seznam vsebuje problematične elemente
+    """
+    
+    vsebuje_problem = False
+    for element in seznam:
+        if element in seznam_problematicnih_elementov:
+            vsebuje_problem = True
+            break
+    return vsebuje_problem
+
+
+def zavrti_cikel(cikel,smer_urinega = True):
+    if smer_urinega:
+        return cikel[1:] + cikel[0]
+    else:
+        return cikel[-1] + cikel[:-1]
+
+def razdalja_med_crkama_v_ciklu(prva_crka, druga_crka, niz_barve, smer_urinega = True):
+    if niz_barve[color_pentagon.index(prva_crka)] == druga_crka:
+        return 0
+    else:
+        return 1 + razdalja_med_crkama_v_ciklu(prva_crka, druga_crka, zavrti_cikel(niz_barve, smer_urinega), smer_urinega)
+
+
+def prvi_string_je_v_drugem(niz1, niz2):
+    for crka in niz1:
+        if crka not in niz2:
+            return False
+    return True
+
+def popravi_vrstni_red_barve(niz_barve):
+    """
+    Funkcija popravi vrstni red stringa barve
+    
+    Izkaže se, da je še najlažje ločiti funkcijo glede na to, koliko barv je vsebovanih
+    Celoten postopek določanja vrstnega reda je opisan tule: https://magic.wizards.com/en/articles/archive/ask-wizards-june-2004-2004-06-01
+    """
+    if not prvi_string_je_v_drugem(niz_barve, color_pentagon):
+        return niz_barve
+    if len(niz_barve) < 2 or len(niz_barve) > 5:
+        return niz_barve
+    if len(niz_barve) == 5:
+        return color_pentagon
+    if len(niz_barve) == 2:
+        transpozicija_niza = niz_barve[::-1]
+        if razdalja_med_crkama_v_ciklu(niz_barve[0], niz_barve[1], color_pentagon) > 2:
+            return transpozicija_niza
+        else:
+            return niz_barve
+    if len(niz_barve) == 4:
+        manjka_barva = color_pentagon[::]
+        for crka in niz_barve:
+            if crka not in manjka_barva:
+                return niz_barve
+            else:
+                manjka_barva = manjka_barva.replace(crka, "")
+        kopija_pentagona = color_pentagon[::]
+        while kopija_pentagona[-1] != manjka_barva:
+            kopija_pentagona = zavrti_cikel(kopija_pentagona)
+        return kopija_pentagona.replace(manjka_barva, "")
+    if len(niz_barve) == 3:
+        # Tule je napaka!!
+        string_barv_v_pravem_redu = ""
+        for barva in color_pentagon:
+            if barva in niz_barve:
+                string_barv_v_pravem_redu += barva 
+        while razdalja_med_crkama_v_ciklu(string_barv_v_pravem_redu[2], string_barv_v_pravem_redu[0], color_pentagon) == 1:
+            string_barv_v_pravem_redu = zavrti_cikel(string_barv_v_pravem_redu)
+        if razdalja_med_crkama_v_ciklu(string_barv_v_pravem_redu[2], string_barv_v_pravem_redu[0], color_pentagon) == 3:
+            return string_barv_v_pravem_redu
+        kopija_pentagona = color_pentagon[::]
+        while not prvi_string_je_v_drugem(string_barv_v_pravem_redu, kopija_pentagona[::2]):
+            kopija_pentagona = zavrti_cikel(kopija_pentagona)
+        return kopija_pentagona[::2]
+            
+        
+
+def popravi_barvo_karte(niz_barve, niz_oracle_texta, niz_cardtypa):
+    """
+    Ta funkcija vzame string barve, ki ga ustrezno popravi glede na oracle text + vrsntni red barv (UW -> WU)
+    """
+    if not niz_barve or "Land" in niz_cardtypa:
+        return "c"
+    
+    for barva in color_pentagon:
+        if barva not in niz_barve:
+            if f"({barva})" in niz_oracle_texta:
+                niz_barve += barva
+    # Odpravimo možnost colorless.
+    if len(niz_barve) >= 2:
+        niz_barve = niz_barve.replace("c","")
+    return popravi_vrstni_red_barve(niz_barve)
 
 # Vzorci
 ###########################################################################################
