@@ -29,7 +29,4 @@ Analiziral bom karte iz vsakega pomembnejšega seta _Magic: the Gathering_. Poda
 - Kateri tipi kart so najbolj vredni?
 - Kateri seti so najbolj vredni?
 - Koliko časa od izida karte v povprečju dosežejo najnižjo ceno?
-- Ali se da z naivnim Bayesovim klasifikatorjem ugotoviti barvo karte glede na:
-  1. oracle text
-  2. supertype, card type in subtype
-  3. ime
+- Ali se da z naivnim Bayesovim klasifikatorjem ugotoviti barvo karte glede na oracle text
