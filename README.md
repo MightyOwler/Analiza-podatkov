@@ -25,9 +25,10 @@ Analiziral bom karte iz vsakega pomembnejšega seta _Magic: the Gathering_. Poda
 
 ## Delovne hipoteze in vprašanja:
 
-- Ali obstaja povezava med redkostjo in ceno kart?
-- Ali obstaja povezava med starostjo in ceno kart?
-- Kateri tipi kart so najbolj vredni?
-- Kateri seti so najbolj vredni?
-- Koliko časa od izida karte v povprečju dosežejo najnižjo ceno?
-- Ali se da z naivnim Bayesovim klasifikatorjem ugotoviti barvo karte glede na oracle text
+1. Ali obstaja povezava med redkostjo in ceno kart?
+2. Ali obstaja povezava med starostjo in ceno kart?
+3. Kateri tipi kart so najbolj vredni?
+4. Kateri seti so najbolj vredni?
+5. Koliko časa od izida karte v povprečju dosežejo najnižjo ceno?
+6. Kakšne so razlike med ameriškim in evropskim trgom?
+7. Ali se da z naivnim Bayesovim klasifikatorjem ugotoviti barvo karte glede na oracle text
