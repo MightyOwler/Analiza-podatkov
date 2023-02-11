@@ -307,6 +307,7 @@ def popravi_barvo_karte(niz_barve, niz_oracle_texta, niz_cardtypa):
         niz_barve = niz_barve.replace("c","")
     return popravi_vrstni_red_barve(niz_barve)
 
+
 # Vzorci
 ###########################################################################################
 
