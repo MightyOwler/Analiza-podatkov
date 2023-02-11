@@ -31,4 +31,4 @@ Analiziral bom karte iz vsakega pomembnejšega seta _Magic: the Gathering_. Poda
 4. Kateri seti so najbolj vredni?
 5. Koliko časa od izida karte v povprečju dosežejo najnižjo ceno?
 6. Kakšne so razlike med ameriškim in evropskim trgom?
-7. Ali se da z naivnim Bayesovim klasifikatorjem ugotoviti barvo karte glede na oracle text
+7. Ali se da z naivnim Bayesovim klasifikatorjem ugotoviti barvo karte glede na oracle text?
