@@ -23,8 +23,9 @@ Analiziral bom karte iz vsakega pomembnejšega seta _Magic: the Gathering_. Poda
 - št. kart
 - datum izida
 
-## Delovne hipoteze:
+## Delovne hipoteze in vprašanja:
 
+- Ali obstaja povezava med redkostjo in ceno kart?
 - Ali obstaja povezava med starostjo in ceno kart?
 - Kateri tipi kart so najbolj vredni?
 - Kateri seti so najbolj vredni?
