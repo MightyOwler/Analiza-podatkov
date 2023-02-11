@@ -4,9 +4,9 @@ import os
 
 seznam_supertypov = ["Basic", "Legendary", "Ongoing", "Snow", "World"]
 problematicni_seti = ["PFNM", "PMTG1", "DD3", "PARL2"]
-problematicni_tipi = ["Token", "Emblem"] # Morda lahko dodam Basic
+problematicni_tipi = ["Token", "Emblem"]
 color_pentagon = "wubrg"
-slovar_za_popravljanje_napacnih_podatkov_s_spletne_strani = {'set': {"VAN" : "PVAN", "SLDC": "PHED", "XCLE": "CED", "XICE": "CEI", "RMB1": "FMB1", "XDND" : "AFR", "2E": "LEB", "2U": "2ED", "1E": "LEA", "PO2": "P02", "3ED":"FBB", "3E":"3ED"}}
+slovar_uradnih_imenovanj_setov = {'set': {"VAN" : "PVAN", "SLDC": "PHED", "XCLE": "CED", "XICE": "CEI", "RMB1": "FMB1", "XDND" : "AFR", "2E": "LEB", "2U": "2ED", "1E": "LEA", "PO2": "P02", "3ED":"FBB", "3E":"3ED"}}
 
 URL_DO_STRANI_SETOV = "https://scryfall.com/sets"
 FILENAME_KARTE_CSV = os.path.join("Podatki", "Tabele_in_JSON", "karte.csv")
@@ -62,6 +62,9 @@ def izlusci_podatke_o_setih(vsebina, vzorec, posamezen_set, podatki_o_kartah):
 
 
 def izlusci_podatke_manacosta_in_barve(niz):
+    """
+    Iz karte izluščimo podatke cene in barve. Treba je poloviti nekaj izjem.
+    """
     seznam_simbolov = re.findall(vzorec_za_manacost, niz)
     cmc = 0
     manacost = ""
@@ -92,10 +95,13 @@ def izlusci_podatke_manacosta_in_barve(niz):
 
 
 def doloci_super_sub_in_cardtype(niz):
+    """
+    Določimo supertype in subtype karte. Treba je poloviti nekaj izjem.
+    """
     niz = niz.removesuffix(", ").strip()
     supertype, subtype, cardtype = [], [], []
     
-    # najprej polovimo nekaj starih karth (niso navedene pravilno na spletni strani)
+    # Najprej polovimo nekaj starih karth (niso navedene pravilno na spletni strani)
     if "Enchant " in niz:
         cardtype.append("Enchantment")
         subtype.append("Aura")
@@ -147,6 +153,8 @@ def izlusci_podatke_o_specificni_karti_iz_njene_datoteke(niz):
         supertype, cardtype, subtype = doloci_super_sub_in_cardtype(cardtype)
     else:
         supertype, subtype = [], []
+        
+    # Ponekod je oracle text nekonsistenten, zato moramo ročno poloviti nekaj napak. Spodaj konkretno so odpravljene napake pri Planeswalkerjih.
     
     if oracle_text:
         oracle_text = re.sub(vzorec_za_popravo_oracle_texta_notranje_znacke, r"(\1)", oracle_text)
@@ -217,18 +225,6 @@ def popravi_subtype_adventure(seznam_subtypa):
             popravljen_seznam.append(tip)
     return popravljen_seznam
 
-def vsebovanost_problematicnih_karte_na_podlagi_seznama(seznam, seznam_problematicnih_elementov = problematicni_tipi):
-    """
-    Preverimo, ali določen seznam vsebuje problematične elemente
-    """
-    
-    vsebuje_problem = False
-    for element in seznam:
-        if element in seznam_problematicnih_elementov:
-            vsebuje_problem = True
-            break
-    return vsebuje_problem
-
 
 def zavrti_cikel(cikel,smer_urinega = True):
     if smer_urinega:
@@ -280,7 +276,6 @@ def popravi_vrstni_red_barve(niz_barve):
             kopija_pentagona = zavrti_cikel(kopija_pentagona)
         return kopija_pentagona.replace(manjka_barva, "")
     if len(niz_barve) == 3:
-        # Tule je napaka!!
         string_barv_v_pravem_redu = ""
         for barva in color_pentagon:
             if barva in niz_barve:
