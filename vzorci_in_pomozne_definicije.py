@@ -182,7 +182,7 @@ def izlusci_podatke_o_specificni_karti_iz_njene_datoteke(niz):
 
 def pretvori_datum_v_datetime(string_datuma):
     """
-    Funkcija, ki obe vrsti datuma pretvori v ustretno datetime obliko (datum_izida in datum all_time_high/low)
+    Funkcija, ki obe vrsti datuma pretvori v ustrezno datetime obliko (datum_izida in datum all_time_high/low)
     """
     
     # Za vsak slučaj
