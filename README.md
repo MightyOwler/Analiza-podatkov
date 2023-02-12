@@ -2,7 +2,11 @@
 
 Analiziral bom karte iz vsakega pomembnejšega seta _Magic: the Gathering_. Podatke bom vzel s strani [MTGStocks.com](https://www.mtgstocks.com/sets), saj so lahko dostopni in bolj popolni kot na evropski spletni strani. Na njej je mogoče razbrati tudi povprečno evropsko ceno kart.
 
-## Pri vsaki karti bom zajel:
+## Uporaba
+
+Datoteka `ZajemPodatkov` zajame podatke, ki jih nato prečistimo z datoteko `CiscenjePodatkov`. Analiza se nahaja v datoteki `AnalizaPodatkov`, naivni Bayesov klasifikator pa v `NaivniBayesZaDolocanjeBarve`.
+
+## Pri vsaki karti sem zajel:
 
 - njen indeks na MTGStocks.com
 - ime
@@ -16,12 +20,16 @@ Analiziral bom karte iz vsakega pomembnejšega seta _Magic: the Gathering_. Poda
 - supertype, card type in subtype
 - oracle text
 
-## Pri vsakem setu bom zajel:
+## Pri vsakem setu sem zajel:
 
 - kodo seta
 - polno ime
 - št. kart
 - datum izida
+
+## Podatki
+
+Podatke sem shranil v mapo `Podatki/Tabele_in_JSON`, glavna datoteka za analizo je bila `popolni_podatki_o_kartah.json`. HTML datotek setov nisem naložil na GitHub.
 
 ## Delovne hipoteze in vprašanja:
 
