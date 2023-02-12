@@ -179,7 +179,6 @@ def izlusci_podatke_o_specificni_karti_iz_njene_datoteke(niz):
 # Pomožne funkcije za čiščenje podatkov
 ###########################################################################################
 
-
 def pretvori_datum_v_datetime(string_datuma):
     """
     Funkcija, ki obe vrsti datuma pretvori v ustrezno datetime obliko (datum_izida in datum all_time_high/low)
@@ -202,7 +201,7 @@ def popravi_cardtype_aftermath(seznam_cardtypa):
     """
     if not seznam_cardtypa:
         return None
-    
+
     popravljen_seznam = []
     for tip in seznam_cardtypa:
         if tip not in popravljen_seznam and "//" not in tip:
@@ -216,7 +215,7 @@ def popravi_subtype_adventure(seznam_subtypa):
     """
     if not seznam_subtypa:
         return None
-    
+
     popravljen_seznam = []
     for tip in seznam_subtypa:
         if "//" in tip:
@@ -225,6 +224,7 @@ def popravi_subtype_adventure(seznam_subtypa):
             popravljen_seznam.append(tip)
     return popravljen_seznam
 
+# Pomožne funkcije za določanja pravega vrstnega reda stringa barve
 
 def zavrti_cikel(cikel,smer_urinega = True):
     if smer_urinega:
@@ -252,6 +252,9 @@ def popravi_vrstni_red_barve(niz_barve):
     Izkaže se, da je še najlažje ločiti funkcijo glede na to, koliko barv je vsebovanih
     Celoten postopek določanja vrstnega reda je opisan tule: https://magic.wizards.com/en/articles/archive/ask-wizards-june-2004-2004-06-01
     """
+    
+    # Obravnavamo primere glede na število barv
+    
     if not prvi_string_je_v_drugem(niz_barve, color_pentagon):
         return niz_barve
     if len(niz_barve) < 2 or len(niz_barve) > 5:
